@@ -50,7 +50,7 @@ fs.readFile("input.txt", "utf-8", (error, data) => {
     
     const isDecreasing = row.every((val, idx) =>
       idx === 0 || (val < row[idx - 1] && row[idx - 1] - val <= 3)
-    );
+    )
     
     return isIncreasing || isDecreasing;
   }
